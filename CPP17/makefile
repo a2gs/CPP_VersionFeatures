@@ -1,5 +1,5 @@
-CC = gcc
-CFLAGS = -g -Wall -std=c11 -D_XOPEN_SOURCE=700
+CC = g++
+CFLAGS = -g -Wall -std=c++17 -D_XOPEN_SOURCE=700
 
 RM = rm -f
 
