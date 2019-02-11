@@ -1,18 +1,21 @@
+CPP = g++
+CPPFLAGS = -g -Wall -D_XOPEN_SOURCE=700
+
+RM = rm -f
+
 all: clean inheritance virtual constructorSequence singleton
 
-CPP_ARGS = -g -Wall
-
 inheritance:
-	g++ -o inheritance inheritance.cpp $(CPP_ARGS)
+	$(CPP) -o inheritance inheritance.cpp $(CPPFLAGS)
 
 virtual:
-	g++ -o virtual virtual.cpp $(CPP_ARGS)
+	$(CPP) -o virtual virtual.cpp $(CPPFLAGS)
 
 constructorSequence:
-	g++ -o constructorSequence constructorSequence.cpp $(CPP_ARGS)
+	$(CPP) -o constructorSequence constructorSequence.cpp $(CPPFLAGS)
 
 singleton:
-	g++ -o singleton singleton.cpp $(CPP_ARGS)
+	$(CPP) -o singleton singleton.cpp $(CPPFLAGS)
 
 clean:
-	-rm inheritance virtual constructorSequence singleton
+	-$(RM) inheritance virtual constructorSequence singleton
