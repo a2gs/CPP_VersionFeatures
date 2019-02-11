@@ -1,13 +1,16 @@
+CPP = g++
+CPPFLAGS = -g -Wall -std=c++11 -D_XOPEN_SOURCE=700
+
+RM = rm -f
+
 all: clean thread1 singleton
 
-CPP_ARGS = -g -Wall -std=c++11
-
 thread1:
-	g++ -o thread1 thread1.cpp -lpthread $(CPP_ARGS)
+	$(CPP) -o thread1 thread1.cpp -lpthread $(CPPFLAGS)
 
 singleton:
-	g++ -o singleton singleton.cpp $(CPP_ARGS)
+	$(CPP) -o singleton singleton.cpp $(CPPFLAGS)
 
 
 clean:
-	-rm thread1 singleton
+	-$(RM) thread1 singleton
