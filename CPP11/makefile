@@ -11,6 +11,5 @@ thread1:
 singleton:
 	$(CPP) -o singleton singleton.cpp $(CPPFLAGS)
 
-
 clean:
 	-$(RM) thread1 singleton
