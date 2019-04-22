@@ -3,7 +3,7 @@
  *
  * C++ 11 Thread Join and Detach samples (with synchronism (mutex) to cout).
  *
- * Public Domain
+ * MIT License
  *
  */
 
